@@ -13,4 +13,5 @@ COPY . .
 RUN npm run build
 
 FROM nginx:latest
+
 COPY --from=0 /usr/src/app/frontend/dist /usr/share/nginx/html
