@@ -64,7 +64,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['http://localhost'],
+    origin: ['http://localhost', 'http://localhost:3000'],
   })
 );
 
