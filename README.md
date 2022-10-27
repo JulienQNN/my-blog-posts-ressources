@@ -86,7 +86,6 @@ node index.js
 # In your frontend folder
 pnpm run dev
 ```
-
-A this point our project is ready to be Dockerised !
-
 Your `http://localhost:3000` should return the Solid Logo and "Free 1337".
+
+A this point our project is ready to be Dockerise !
