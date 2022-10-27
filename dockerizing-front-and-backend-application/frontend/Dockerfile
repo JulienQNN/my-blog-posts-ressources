@@ -1,6 +1,5 @@
 FROM node:alpine
 
-
 RUN mkdir -p /usr/src/app
 RUN mkdir -p /usr/src/app/frontend
 
@@ -14,4 +13,5 @@ COPY . .
 RUN npm run build
 
 FROM nginx:latest
+
 COPY --from=0 /usr/src/app/frontend/dist /usr/share/nginx/html
